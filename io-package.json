@@ -1,0 +1,108 @@
+{
+    "common": {
+        "name":                     "hkv",
+        "version":                  "0.0.1",
+	    "news": {
+			"0.0.1": {
+			  "en": "initial adapter",
+			  "de": "Initiale Version",
+			  "ru": "Первоначальный адаптер"
+			}
+		},
+        "title":                    "hkv adapter",
+        "desc":                     {
+				 "en": "ioBroker hkv Adapter",
+				 "de": "ioBroker Hkv Adapter",
+				 "ru": "ioBroker Hkv драйвер как образец"
+		},
+        "platform":                 "Javascript/Node.js",
+        "mode":                     "daemon",
+        "icon":                     "hkv.png",
+        "enabled":                  true,
+		"extIcon":                  "https://raw.githubusercontent.com/foxthefox/ioBroker.hkv/master/admin/hkv.png",
+		"keywords":                 ["hkv", "vis", "GUI", "graphical"],
+        "readme":                   "https://github.com/foxthefox/ioBroker.hkv/blob/master/README.md",
+		"loglevel":                 "info",
+        "type":                     "common adapters",
+        "restartAdapters":          ["vis"]
+    },
+    "native": {
+        "radiators": [
+                {
+                    "rid": "1",
+                    "rserial": "0910",
+                    "rfactor": 1.337,
+                    "rtype": "2 Rippen",
+                    "rpower": " kW",
+                    "rname": "Flur"
+                },
+                {
+                    "rid": "2",
+                    "rserial": "0909",
+                    "rfactor": 1.637,
+                    "rtype": "2 Rippen",
+                    "rpower": "kW",
+                    "rname": "Bad unten"
+                },
+                {
+                    "rid": "3",
+                    "rserial": "0912",
+                    "rfactor": 0.869,
+                    "rtype": "1 Rippe",
+                    "rpower": "kW",
+                    "rname": "Küche"
+                },
+                {
+                    "rid": "4",
+                    "rserial": "0911",
+                    "rfactor": 1.337,
+                    "rtype": "2 Rippen",
+                    "rpower": "kW",
+                    "rname": "Wohnzimmer links"
+                },
+                {
+                    "rid": "5",
+                    "rserial": "0913",
+                    "rfactor": 1.337,
+                    "rtype": "2 Rippen",
+                    "rpower": "kW",
+                    "rname": "Wohnzimmer rechts"
+                },
+                {
+                    "rid": "6",
+                    "rserial": "8111",
+                    "rfactor": 1.505,
+                    "rtype": "2 Rippen",
+                    "rpower": "kW",
+                    "rname": "Kreativzimmer"
+                },
+                {
+                    "rid": "7",
+                    "rserial": "9705",
+                    "rfactor": 1.672,
+                    "rtype": "2 Rippen",
+                    "rpower": "kW",
+                    "rname": "Schlafzimmer"
+                },
+                {
+                    "rid": "8",
+                    "rserial": "9704",
+                    "rfactor": 0.674,
+                    "rtype": "1 Rippe",
+                    "rpower": "kW",
+                    "rname": "Bad oben"
+                },
+                {
+                    "rid": "9",
+                    "rserial": "8107",
+                    "rfactor": 1.004,
+                    "rtype": "2 Rippen",
+                    "rpower": "kW",
+                    "rname": "Gästezimmer"
+                }
+            ]
+        },
+    "objects": [
+
+    ]
+}
