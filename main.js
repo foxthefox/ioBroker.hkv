@@ -84,11 +84,11 @@ adapter.on('ready', function () {
     main();
 });
 
-function defineRadiator(id){
+function defineRadiator(id, rname){
     adapter.setObject('radiator_' + id, {
         type: 'channel',
         common: {
-            name: 'radiator ' + id,
+            name: rname,
             role: 'sensor'
         },
         native: {
@@ -129,7 +129,7 @@ function main() {
 
     var obj = adapter.config.radiators;
     for (var anz in obj){
-            defineRadiator(obj[anz].rid);
+            defineRadiator(obj[anz].rid, obj[anz].rname);
     }
     // in this hkv all states changes inside the adapters namespace are subscribed
     adapter.subscribeStates('*');
